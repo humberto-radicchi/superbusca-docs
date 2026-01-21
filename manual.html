@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manual Básico da extensão SuperBusca - LinkedIn Job Automation">
+    <title>Manual Básico - SuperBusca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0A66C2;
+            --primary-hover: #004182;
+            --success-color: #057642;
+            --info-color: #4A90E2;
+            --warning-color: #F5C75D;
+            --text-primary: #191919;
+            --text-secondary: #666666;
+            --bg-main: #F3F2EF;
+            --bg-card: #FFFFFF;
+            --border-subtle: #EBEBEB;
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: var(--text-primary);
+            font-size: 26px;
+            font-weight: 600;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-subtle);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            font-size: 15px;
+        }
+
+        ul,
+        ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: var(--text-primary);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        code {
+            background: #F5F5F5;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 14px;
+            color: #E01E5A;
+        }
+
+        .step-box {
+            background: linear-gradient(135deg, #EBF4FE 0%, #F0F8FF 100%);
+            border-left: 4px solid var(--primary-color);
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(10, 102, 194, 0.1);
+        }
+
+        .step-box h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .step-box ol {
+            margin-top: 15px;
+        }
+
+        .config-box {
+            background: #F9FAFB;
+            border: 1px solid var(--border-subtle);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .config-box h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .tip-box {
+            background: #FFF9E6;
+            border-left: 4px solid var(--warning-color);
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .tip-box::before {
+            content: "💡 Dica: ";
+            font-weight: 600;
+            color: #8B7000;
+        }
+
+        .example-box {
+            background: #E6F4EA;
+            border-left: 4px solid var(--success-color);
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .example-box::before {
+            content: "📝 Exemplo: ";
+            font-weight: 600;
+            color: var(--success-color);
+        }
+
+        .divider {
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--border-subtle), transparent);
+            margin: 40px 0;
+        }
+
+        .emoji {
+            font-size: 24px;
+        }
+
+        .button-demo {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .button-demo.success {
+            background: var(--success-color);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 2px solid var(--border-subtle);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #FFF9E6 0%, #FFF9E6 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 88%;
+            padding: 2px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>📘 Manual Básico do SuperBusca</h1>
+            <p class="subtitle">Bem-vindo ao SuperBusca! Este guia rápido vai te ajudar a configurar e começar a usar
+                sua extensão de automação para LinkedIn.</p>
+        </header>
+
+        <section>
+            <h2>🚀 Como Iniciar (Passo a Passo)</h2>
+
+            <div class="step-box">
+                <h3>1. Conectando sua Conta</h3>
+                <p>Ao abrir a extensão pela primeira vez, você verá um botão <strong>"Conectar Google"</strong> no topo.
+                </p>
+                <ol>
+                    <li>Clique no botão.</li>
+                    <li>Autorize o acesso à sua conta Google (necessário para criar e salvar a planilha de vagas).</li>
+                    <li>Após conectar, uma planilha será criada automaticamente no seu Google Drive.</li>
+                    <li>Clique em <strong>"📊 Abrir Planilha de Vagas"</strong> no rodapé para ver onde seus dados serão
+                        salvos.</li>
+                </ol>
+            </div>
+
+            <div class="step-box">
+                <h3>2. Configurando o Buscador</h3>
+                <p>Antes de iniciar, você precisa dizer ao SuperBusca o que procurar.</p>
+                <ol>
+                    <li>Clique no ícone de engrenagem ⚙️ (aba Configurações).</li>
+                    <li>Preencha as <strong>URLs de Busca</strong> e <strong>Palavras-Chave</strong> (veja detalhes
+                        abaixo).</li>
+                    <li>Clique em <strong>"💾 Salvar Localmente"</strong>.</li>
+                </ol>
+            </div>
+
+            <div class="step-box">
+                <h3>3. Iniciando a Busca</h3>
+                <ol>
+                    <li>Vá para a aba <strong>"Buscador"</strong> (a do meio).</li>
+                    <li>Clique no botão verde <span class="button-demo success">Iniciar Busca</span>.</li>
+                    <li>Uma nova aba do LinkedIn será aberta. <span class="highlight"><strong>Não feche essa
+                                aba</strong></span> enquanto o robô estiver trabalhando.</li>
+                    <li>Você pode acompanhar o progresso na barra de status da extensão.</li>
+                </ol>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2>⚙️ Entendendo as Configurações</h2>
+            <p>Aqui explicamos para que serve cada campo na aba de configurações (⚙️):</p>
+
+            <div class="config-box">
+                <h3>🔗 URLs de Busca</h3>
+                <p>Cole aqui os links das buscas de emprego do LinkedIn que você quer monitorar.</p>
+                <p><strong>Como pegar o link:</strong></p>
+                <ol>
+                    <li>Vá no LinkedIn e faça uma pesquisa de vagas (ex: "Desenvolvedor Java Remoto").</li>
+                    <li>Aplique os filtros desejados (Data do anúncio, Localização, etc).</li>
+                    <li>Copie a URL do navegador e cole neste campo.</li>
+                </ol>
+                <div class="tip-box">Você pode colocar vários links, um por linha.</div>
+            </div>
+
+            <div class="config-box">
+                <h3>🎯 Palavras-Chave no Título</h3>
+                <p>Lista de palavras que <strong>DEVEM</strong> aparecer no título da vaga.</p>
+                <div class="example-box">Se você colocar <code>Senior</code>, vagas como "Desenvolvedor Júnior" serão
+                    ignoradas.</div>
+                <div class="tip-box">Deixe em branco se quiser aceitar qualquer título da sua busca.</div>
+            </div>
+
+            <div class="config-box">
+                <h3>🚫 Palavras Restritas no Título</h3>
+                <p>Lista de palavras que <strong>NÃO PODEM</strong> aparecer no título.</p>
+                <div class="example-box">
+                    <code>Estágio</code>, <code>Vendedor</code>, <code>Presencial</code>.
+                </div>
+                <p>O robô ignorará automaticamente qualquer vaga que contenha essas palavras.</p>
+            </div>
+
+            <div class="config-box">
+                <h3>🇺🇸 Pular vagas com descrição em Inglês</h3>
+                <p>Se marcado, o robô abrirá a vaga e verificará se a descrição está em inglês. Se estiver, a vaga será
+                    ignorada.</p>
+                <div class="tip-box">Útil se você busca apenas vagas em português.</div>
+            </div>
+
+            <div class="config-box">
+                <h3>📄 Limite de Páginas</h3>
+                <p>Define quantas páginas de resultados do LinkedIn o robô deve percorrer por cada URL de busca.</p>
+                <div class="tip-box">Padrão: 10 páginas. Aumente se quiser uma busca mais profunda.</div>
+            </div>
+
+            <div class="config-box">
+                <h3>📅 Manter vagas por (dias)</h3>
+                <p>Define por quanto tempo as vagas salvas (cache) são lembradas para evitar duplicatas.</p>
+                <div class="tip-box">Padrão: 30 dias.</div>
+            </div>
+
+            <div class="config-box">
+                <h3>⏰ Busca Automática (Na aba Buscador)</h3>
+                <p>Ao lado do botão de iniciar, você encontra a opção "Busca Automática".</p>
+                <ul>
+                    <li><strong>Input numérico:</strong> Define o intervalo em minutos (ex: 30, 60).</li>
+                    <li><strong>Chave (Switch):</strong> Ativa a busca recorrente. O robô acordará sozinho no intervalo
+                        definido para buscar novas vagas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2>📊 Gerenciando Vagas (Aba Vagas Coletadas)</h2>
+            <p>Na primeira aba da extensão, você vê as vagas que foram encontradas e validadas.</p>
+            <ul>
+                <li><strong>Botão ✔ (Check):</strong> Marca a vaga como "Visto" (abre o link para você aplicar).</li>
+                <li><strong>Botão ✖ (X):</strong> Arquiva a vaga (envia para a aba "Ignoradas" na planilha).</li>
+            </ul>
+        </section>
+
+        <hr class="divider">
+
+        <section>
+            <h2>☁️ Sincronização</h2>
+            <p>Na aba de configurações, existem botões de nuvem:</p>
+            <ul>
+                <li><strong>⬆️ Enviar:</strong> Salva suas configurações atuais na sua planilha do Google (aba
+                    "Config").</li>
+                <li><strong>⬇️ Baixar:</strong> Carrega as configurações salvas na planilha para a extensão (útil se
+                    você usar em computadores diferentes).</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p><strong>Dúvidas?</strong> Consulte o arquivo <code>TROUBLESHOOTING.md</code> para resolver problemas
+                comuns.</p>
+            <p style="margin-top: 15px;">&copy; 2026 SuperBusca - LinkedIn Job Automation</p>
+        </footer>
+    </div>
+</body>
+
+</html>
