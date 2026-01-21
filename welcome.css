@@ -32,6 +32,287 @@ body {
     margin: 0 auto;
 }
 
+/* Navigation Menu */
+.nav-menu {
+    background: white;
+    border-radius: 16px;
+    padding: 20px 40px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.nav-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-brand-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-link.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+/* Content Pages Styles */
+.content-page {
+    background: white;
+    border-radius: 16px;
+    padding: 50px 40px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 40px;
+}
+
+.content-page header {
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+}
+
+.content-page h1 {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.content-page h2 {
+    color: var(--text-primary);
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-subtle);
+}
+
+.content-page h3 {
+    color: var(--text-primary);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.content-page p {
+    margin-bottom: 15px;
+    color: var(--text-primary);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.content-page ul,
+.content-page ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.content-page li {
+    margin-bottom: 10px;
+    color: var(--text-primary);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.content-page strong {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.content-page a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.content-page a:hover {
+    text-decoration: underline;
+}
+
+.content-page code {
+    background: #F5F5F5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 14px;
+    color: #E01E5A;
+}
+
+/* Info Boxes */
+.info-box,
+.highlight-box {
+    background: #EBF4FE;
+    border-left: 4px solid var(--primary-color);
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+
+.warning-box {
+    background: #FEF3E6;
+    border-left: 4px solid #F5C75D;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+
+.danger-box {
+    background: #FCE8E6;
+    border-left: 4px solid #CC1016;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+
+.summary-box {
+    background: #E6F4EA;
+    border-left: 4px solid var(--success-color);
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 6px;
+}
+
+.summary-box h3 {
+    color: var(--success-color);
+    margin-top: 0;
+    font-size: 18px;
+}
+
+/* Step boxes for manual page */
+.step-box {
+    background: linear-gradient(135deg, #EBF4FE 0%, #F0F8FF 100%);
+    border-left: 4px solid var(--primary-color);
+    padding: 20px 25px;
+    margin: 25px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(10, 102, 194, 0.1);
+}
+
+.step-box h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.config-box {
+    background: #F9FAFB;
+    border: 1px solid var(--border-subtle);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.config-box h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.tip-box {
+    background: #FFF9E6;
+    border-left: 4px solid #F5C75D;
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.tip-box::before {
+    content: "💡 Dica: ";
+    font-weight: 600;
+    color: #8B7000;
+}
+
+.example-box {
+    background: #E6F4EA;
+    border-left: 4px solid var(--success-color);
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.example-box::before {
+    content: "📝 Exemplo: ";
+    font-weight: 600;
+    color: var(--success-color);
+}
+
+.can-do {
+    background: #E6F4EA;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.cannot-do {
+    background: #FCE8E6;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.last-updated {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.divider {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--border-subtle), transparent);
+    margin: 40px 0;
+}
+
 /* Hero Section */
 .hero {
     background: white;
@@ -438,6 +719,28 @@ footer {
 @media (max-width: 768px) {
     body {
         padding: 20px 10px;
+    }
+
+    .nav-menu {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .content-page {
+        padding: 30px 20px;
     }
 
     .hero {

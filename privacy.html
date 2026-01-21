@@ -8,380 +8,256 @@
     <title>Política de Privacidade - SuperBusca</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #0A66C2;
-            --primary-hover: #004182;
-            --success-color: #057642;
-            --text-primary: #191919;
-            --text-secondary: #666666;
-            --bg-main: #F3F2EF;
-            --bg-card: #FFFFFF;
-            --border-subtle: #EBEBEB;
-            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: var(--bg-main);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: var(--bg-card);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: var(--shadow-md);
-        }
-
-        header {
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            color: var(--primary-color);
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .last-updated {
-            color: var(--text-secondary);
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        h2 {
-            color: var(--text-primary);
-            font-size: 24px;
-            font-weight: 600;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid var(--border-subtle);
-        }
-
-        h3 {
-            color: var(--text-primary);
-            font-size: 18px;
-            font-weight: 600;
-            margin-top: 25px;
-            margin-bottom: 12px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            color: var(--text-primary);
-        }
-
-        ul,
-        ol {
-            margin-left: 25px;
-            margin-bottom: 15px;
-        }
-
-        li {
-            margin-bottom: 8px;
-            color: var(--text-primary);
-        }
-
-        strong {
-            font-weight: 600;
-            color: var(--text-primary);
-        }
-
-        a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        a:hover {
-            color: var(--primary-hover);
-            text-decoration: underline;
-        }
-
-        .highlight-box {
-            background: #EBF4FE;
-            border-left: 4px solid var(--primary-color);
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-
-        .summary-box {
-            background: #E6F4EA;
-            border-left: 4px solid var(--success-color);
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 4px;
-        }
-
-        .summary-box h3 {
-            color: var(--success-color);
-            margin-top: 0;
-            font-size: 18px;
-        }
-
-        .summary-box ul {
-            margin-left: 20px;
-            margin-bottom: 0;
-        }
-
-        .summary-box li {
-            color: var(--text-primary);
-        }
-
-        footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border-subtle);
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 14px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 26px;
-            }
-
-            h2 {
-                font-size: 20px;
-            }
-
-            h3 {
-                font-size: 16px;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="welcome.css">
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <h1>Política de Privacidade</h1>
-            <p class="last-updated"><strong>Última atualização:</strong> 20 de janeiro de 2026</p>
-        </header>
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
+            <a href="./index.html" class="nav-brand">
+                <img src="icon128.png" alt="SuperBusca Logo" class="nav-logo">
+                <span class="nav-brand-text">SuperBusca</span>
+            </a>
+            <div class="nav-links">
+                <a href="./index.html" class="nav-link">Início</a>
+                <a href="./manual.html" class="nav-link">Manual</a>
+                <a href="./privacy.html" class="nav-link active">Privacidade</a>
+                <a href="./terms.html" class="nav-link">Termos</a>
+            </div>
+        </nav>
 
-        <section>
-            <h2>1. Introdução</h2>
-            <p>A SuperBusca - LinkedIn Job Automation ("nós", "nosso" ou "extensão") respeita sua privacidade e está
-                comprometida em proteger seus dados pessoais. Esta Política de Privacidade explica como coletamos,
-                usamos, armazenamos e protegemos suas informações ao usar nossa extensão do Chrome.</p>
-        </section>
+        <!-- Content -->
+        <div class="content-page">
+            <header>
+                <h1>Política de Privacidade</h1>
+                <p class="last-updated"><strong>Última atualização:</strong> 20 de janeiro de 2026</p>
+            </header>
 
-        <section>
-            <h2>2. Informações que Coletamos</h2>
+            <section>
+                <h2>1. Introdução</h2>
+                <p>A SuperBusca - LinkedIn Job Automation ("nós", "nosso" ou "extensão") respeita sua privacidade e está
+                    comprometida em proteger seus dados pessoais. Esta Política de Privacidade explica como coletamos,
+                    usamos, armazenamos e protegemos suas informações ao usar nossa extensão do Chrome.</p>
+            </section>
 
-            <h3>2.1 Informações Fornecidas por Você</h3>
-            <ul>
-                <li><strong>Configurações da Extensão:</strong> Filtros de busca, palavras-chave, lista restritiva,
-                    preferências de idioma e outras configurações personalizadas</li>
-                <li><strong>Credenciais do Google:</strong> Token de autenticação OAuth2 para acesso ao Google Sheets
-                    (apenas se você optar por usar esta funcionalidade)</li>
-                <li><strong>ID da Planilha:</strong> ID da planilha do Google Sheets que você escolher para armazenar os
-                    dados</li>
-            </ul>
+            <section>
+                <h2>2. Informações que Coletamos</h2>
 
-            <h3>2.2 Informações Coletadas Automaticamente</h3>
-            <ul>
-                <li><strong>Dados de Vagas do LinkedIn:</strong> Título, empresa, tipo de aplicação, link e descrição
-                    das vagas encontradas durante a busca</li>
-                <li><strong>Dados de Uso Local:</strong> Informações sobre vagas processadas, ignoradas e aplicadas
-                    (armazenadas apenas localmente no seu navegador)</li>
-            </ul>
+                <h3>2.1 Informações Fornecidas por Você</h3>
+                <ul>
+                    <li><strong>Configurações da Extensão:</strong> Filtros de busca, palavras-chave, lista restritiva,
+                        preferências de idioma e outras configurações personalizadas</li>
+                    <li><strong>Credenciais do Google:</strong> Token de autenticação OAuth2 para acesso ao Google
+                        Sheets
+                        (apenas se você optar por usar esta funcionalidade)</li>
+                    <li><strong>ID da Planilha:</strong> ID da planilha do Google Sheets que você escolher para
+                        armazenar os
+                        dados</li>
+                </ul>
 
-            <h3>2.3 Informações que NÃO Coletamos</h3>
-            <ul>
-                <li><strong>Credenciais do LinkedIn:</strong> Não coletamos, armazenamos ou transmitimos suas
-                    credenciais de login do LinkedIn</li>
-                <li><strong>Dados Pessoais Sensíveis:</strong> Não coletamos informações como CPF, RG, dados bancários
-                    ou outras informações sensíveis</li>
-                <li><strong>Histórico de Navegação:</strong> Não rastreamos sua navegação fora do LinkedIn</li>
-                <li><strong>Dados de Terceiros:</strong> Não compartilhamos seus dados com terceiros para fins de
-                    marketing ou publicidade</li>
-            </ul>
-        </section>
+                <h3>2.2 Informações Coletadas Automaticamente</h3>
+                <ul>
+                    <li><strong>Dados de Vagas do LinkedIn:</strong> Título, empresa, tipo de aplicação, link e
+                        descrição
+                        das vagas encontradas durante a busca</li>
+                    <li><strong>Dados de Uso Local:</strong> Informações sobre vagas processadas, ignoradas e aplicadas
+                        (armazenadas apenas localmente no seu navegador)</li>
+                </ul>
 
-        <section>
-            <h2>3. Como Usamos Suas Informações</h2>
-            <p>Usamos as informações coletadas exclusivamente para:</p>
-            <ul>
-                <li><strong>Funcionalidade da Extensão:</strong> Automatizar a busca de vagas no LinkedIn conforme suas
-                    configurações</li>
-                <li><strong>Filtragem de Vagas:</strong> Aplicar filtros personalizados para encontrar vagas relevantes
-                </li>
-                <li><strong>Armazenamento de Dados:</strong> Salvar vagas encontradas no Google Sheets (se você optar
-                    por usar esta funcionalidade)</li>
-                <li><strong>Deduplicação:</strong> Evitar processar a mesma vaga múltiplas vezes</li>
-                <li><strong>Melhorar a Experiência:</strong> Manter suas preferências e configurações entre sessões</li>
-            </ul>
-        </section>
+                <h3>2.3 Informações que NÃO Coletamos</h3>
+                <ul>
+                    <li><strong>Credenciais do LinkedIn:</strong> Não coletamos, armazenamos ou transmitimos suas
+                        credenciais de login do LinkedIn</li>
+                    <li><strong>Dados Pessoais Sensíveis:</strong> Não coletamos informações como CPF, RG, dados
+                        bancários
+                        ou outras informações sensíveis</li>
+                    <li><strong>Histórico de Navegação:</strong> Não rastreamos sua navegação fora do LinkedIn</li>
+                    <li><strong>Dados de Terceiros:</strong> Não compartilhamos seus dados com terceiros para fins de
+                        marketing ou publicidade</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>4. Armazenamento de Dados</h2>
+            <section>
+                <h2>3. Como Usamos Suas Informações</h2>
+                <p>Usamos as informações coletadas exclusivamente para:</p>
+                <ul>
+                    <li><strong>Funcionalidade da Extensão:</strong> Automatizar a busca de vagas no LinkedIn conforme
+                        suas
+                        configurações</li>
+                    <li><strong>Filtragem de Vagas:</strong> Aplicar filtros personalizados para encontrar vagas
+                        relevantes
+                    </li>
+                    <li><strong>Armazenamento de Dados:</strong> Salvar vagas encontradas no Google Sheets (se você
+                        optar
+                        por usar esta funcionalidade)</li>
+                    <li><strong>Deduplicação:</strong> Evitar processar a mesma vaga múltiplas vezes</li>
+                    <li><strong>Melhorar a Experiência:</strong> Manter suas preferências e configurações entre sessões
+                    </li>
+                </ul>
+            </section>
 
-            <h3>4.1 Armazenamento Local</h3>
-            <p>A maioria dos dados é armazenada <strong>localmente no seu navegador</strong> usando a API
-                <code>chrome.storage.local</code>:</p>
-            <ul>
-                <li>Configurações da extensão</li>
-                <li>Lista de vagas processadas</li>
-                <li>Cache de deduplicação</li>
-                <li>Preferências do usuário</li>
-            </ul>
-            <div class="highlight-box">
-                <strong>Importante:</strong> Esses dados permanecem no seu dispositivo e não são transmitidos para
-                servidores externos.
+            <section>
+                <h2>4. Armazenamento de Dados</h2>
+
+                <h3>4.1 Armazenamento Local</h3>
+                <p>A maioria dos dados é armazenada <strong>localmente no seu navegador</strong> usando a API
+                    <code>chrome.storage.local</code>:
+                </p>
+                <ul>
+                    <li>Configurações da extensão</li>
+                    <li>Lista de vagas processadas</li>
+                    <li>Cache de deduplicação</li>
+                    <li>Preferências do usuário</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>Importante:</strong> Esses dados permanecem no seu dispositivo e não são transmitidos para
+                    servidores externos.
+                </div>
+
+                <h3>4.2 Armazenamento no Google Sheets</h3>
+                <p>Se você optar por usar a integração com Google Sheets:</p>
+                <ul>
+                    <li>Os dados de vagas são enviados para a planilha do Google Sheets que você especificar</li>
+                    <li>Você mantém controle total sobre essa planilha</li>
+                    <li>Você pode deletar, modificar ou exportar os dados a qualquer momento</li>
+                    <li>A extensão acessa a planilha usando OAuth2 com permissões limitadas apenas para leitura e
+                        escrita de
+                        planilhas</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>5. Compartilhamento de Dados</h2>
+                <div class="highlight-box">
+                    <strong>Não compartilhamos, vendemos ou alugamos seus dados pessoais para terceiros.</strong>
+                </div>
+                <p>Os únicos serviços externos que podem ter acesso aos seus dados são:</p>
+                <ul>
+                    <li><strong>Google Sheets API:</strong> Apenas se você optar por usar a funcionalidade de integração
+                        com
+                        Google Sheets</li>
+                    <li><strong>LinkedIn:</strong> A extensão interage com o LinkedIn apenas para buscar vagas públicas
+                        disponíveis na plataforma</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>6. Segurança dos Dados</h2>
+                <p>Implementamos medidas de segurança para proteger suas informações:</p>
+                <ul>
+                    <li><strong>OAuth2:</strong> Autenticação segura com Google usando o padrão OAuth2</li>
+                    <li><strong>HTTPS:</strong> Todas as comunicações com APIs externas são feitas via HTTPS</li>
+                    <li><strong>Armazenamento Local:</strong> Dados sensíveis são armazenados localmente no navegador,
+                        não
+                        em servidores externos</li>
+                    <li><strong>Permissões Mínimas:</strong> A extensão solicita apenas as permissões necessárias para
+                        funcionar</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>7. Seus Direitos</h2>
+                <p>Você tem os seguintes direitos sobre seus dados:</p>
+                <ul>
+                    <li><strong>Acesso:</strong> Visualizar todos os dados armazenados pela extensão</li>
+                    <li><strong>Modificação:</strong> Alterar suas configurações e preferências a qualquer momento</li>
+                    <li><strong>Exclusão:</strong> Deletar todos os dados armazenados desinstalando a extensão ou
+                        limpando o
+                        armazenamento local</li>
+                    <li><strong>Portabilidade:</strong> Exportar seus dados do Google Sheets a qualquer momento</li>
+                    <li><strong>Revogação:</strong> Revogar o acesso da extensão ao Google Sheets através das <a
+                            href="https://myaccount.google.com/permissions">configurações da sua conta
+                            Google</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>8. Retenção de Dados</h2>
+                <ul>
+                    <li><strong>Dados Locais:</strong> Mantidos até que você desinstale a extensão ou limpe o
+                        armazenamento
+                        do navegador</li>
+                    <li><strong>Dados no Google Sheets:</strong> Mantidos indefinidamente até que você os delete
+                        manualmente
+                        da planilha</li>
+                    <li><strong>Token OAuth:</strong> Válido até que você revogue o acesso nas configurações da sua
+                        conta
+                        Google</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>9. Cookies e Tecnologias de Rastreamento</h2>
+                <p>A extensão <strong>não utiliza cookies</strong> para rastreamento. A extensão interage com cookies do
+                    LinkedIn apenas para manter sua sessão ativa enquanto você usa o LinkedIn normalmente.</p>
+            </section>
+
+            <section>
+                <h2>10. Alterações nesta Política</h2>
+                <p>Podemos atualizar esta Política de Privacidade periodicamente. Quando fizermos alterações
+                    significativas:
+                </p>
+                <ul>
+                    <li>Atualizaremos a data de "Última atualização" no topo deste documento</li>
+                    <li>Notificaremos os usuários através de uma atualização da extensão</li>
+                    <li>As alterações entrarão em vigor imediatamente após a publicação</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>11. Conformidade com Leis</h2>
+                <p>Esta extensão está em conformidade com:</p>
+                <ul>
+                    <li><strong>LGPD</strong> (Lei Geral de Proteção de Dados - Brasil)</li>
+                    <li><strong>GDPR</strong> (General Data Protection Regulation - União Europeia)</li>
+                    <li><strong>Políticas do Chrome Web Store</strong></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>12. Uso por Menores de Idade</h2>
+                <p>A extensão não é destinada a menores de 18 anos. Não coletamos intencionalmente dados de menores de
+                    idade.</p>
+            </section>
+
+            <section>
+                <h2>13. Contato</h2>
+                <p>Se você tiver dúvidas, preocupações ou solicitações relacionadas a esta Política de Privacidade,
+                    entre em
+                    contato:</p>
+                <ul>
+                    <li><strong>E-mail:</strong> [Seu e-mail de contato]</li>
+                    <li><strong>GitHub:</strong> [Link do repositório, se aplicável]</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>14. Consentimento</h2>
+                <p>Ao instalar e usar a extensão SuperBusca - LinkedIn Job Automation, você concorda com esta Política
+                    de
+                    Privacidade e com o processamento de seus dados conforme descrito aqui.</p>
+            </section>
+
+            <div class="summary-box">
+                <h3>Resumo em Linguagem Simples:</h3>
+                <ul>
+                    <li>✅ Seus dados ficam no seu computador</li>
+                    <li>✅ Você controla o que é salvo no Google Sheets</li>
+                    <li>✅ Não vendemos ou compartilhamos seus dados</li>
+                    <li>✅ Você pode deletar tudo a qualquer momento</li>
+                    <li>✅ Não rastreamos você fora do LinkedIn</li>
+                    <li>✅ Usamos apenas o necessário para a extensão funcionar</li>
+                </ul>
             </div>
 
-            <h3>4.2 Armazenamento no Google Sheets</h3>
-            <p>Se você optar por usar a integração com Google Sheets:</p>
-            <ul>
-                <li>Os dados de vagas são enviados para a planilha do Google Sheets que você especificar</li>
-                <li>Você mantém controle total sobre essa planilha</li>
-                <li>Você pode deletar, modificar ou exportar os dados a qualquer momento</li>
-                <li>A extensão acessa a planilha usando OAuth2 com permissões limitadas apenas para leitura e escrita de
-                    planilhas</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>5. Compartilhamento de Dados</h2>
-            <div class="highlight-box">
-                <strong>Não compartilhamos, vendemos ou alugamos seus dados pessoais para terceiros.</strong>
-            </div>
-            <p>Os únicos serviços externos que podem ter acesso aos seus dados são:</p>
-            <ul>
-                <li><strong>Google Sheets API:</strong> Apenas se você optar por usar a funcionalidade de integração com
-                    Google Sheets</li>
-                <li><strong>LinkedIn:</strong> A extensão interage com o LinkedIn apenas para buscar vagas públicas
-                    disponíveis na plataforma</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>6. Segurança dos Dados</h2>
-            <p>Implementamos medidas de segurança para proteger suas informações:</p>
-            <ul>
-                <li><strong>OAuth2:</strong> Autenticação segura com Google usando o padrão OAuth2</li>
-                <li><strong>HTTPS:</strong> Todas as comunicações com APIs externas são feitas via HTTPS</li>
-                <li><strong>Armazenamento Local:</strong> Dados sensíveis são armazenados localmente no navegador, não
-                    em servidores externos</li>
-                <li><strong>Permissões Mínimas:</strong> A extensão solicita apenas as permissões necessárias para
-                    funcionar</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>7. Seus Direitos</h2>
-            <p>Você tem os seguintes direitos sobre seus dados:</p>
-            <ul>
-                <li><strong>Acesso:</strong> Visualizar todos os dados armazenados pela extensão</li>
-                <li><strong>Modificação:</strong> Alterar suas configurações e preferências a qualquer momento</li>
-                <li><strong>Exclusão:</strong> Deletar todos os dados armazenados desinstalando a extensão ou limpando o
-                    armazenamento local</li>
-                <li><strong>Portabilidade:</strong> Exportar seus dados do Google Sheets a qualquer momento</li>
-                <li><strong>Revogação:</strong> Revogar o acesso da extensão ao Google Sheets através das <a
-                        href="https://myaccount.google.com/permissions" target="_blank">configurações da sua conta
-                        Google</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>8. Retenção de Dados</h2>
-            <ul>
-                <li><strong>Dados Locais:</strong> Mantidos até que você desinstale a extensão ou limpe o armazenamento
-                    do navegador</li>
-                <li><strong>Dados no Google Sheets:</strong> Mantidos indefinidamente até que você os delete manualmente
-                    da planilha</li>
-                <li><strong>Token OAuth:</strong> Válido até que você revogue o acesso nas configurações da sua conta
-                    Google</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>9. Cookies e Tecnologias de Rastreamento</h2>
-            <p>A extensão <strong>não utiliza cookies</strong> para rastreamento. A extensão interage com cookies do
-                LinkedIn apenas para manter sua sessão ativa enquanto você usa o LinkedIn normalmente.</p>
-        </section>
-
-        <section>
-            <h2>10. Alterações nesta Política</h2>
-            <p>Podemos atualizar esta Política de Privacidade periodicamente. Quando fizermos alterações significativas:
-            </p>
-            <ul>
-                <li>Atualizaremos a data de "Última atualização" no topo deste documento</li>
-                <li>Notificaremos os usuários através de uma atualização da extensão</li>
-                <li>As alterações entrarão em vigor imediatamente após a publicação</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>11. Conformidade com Leis</h2>
-            <p>Esta extensão está em conformidade com:</p>
-            <ul>
-                <li><strong>LGPD</strong> (Lei Geral de Proteção de Dados - Brasil)</li>
-                <li><strong>GDPR</strong> (General Data Protection Regulation - União Europeia)</li>
-                <li><strong>Políticas do Chrome Web Store</strong></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>12. Uso por Menores de Idade</h2>
-            <p>A extensão não é destinada a menores de 18 anos. Não coletamos intencionalmente dados de menores de
-                idade.</p>
-        </section>
-
-        <section>
-            <h2>13. Contato</h2>
-            <p>Se você tiver dúvidas, preocupações ou solicitações relacionadas a esta Política de Privacidade, entre em
-                contato:</p>
-            <ul>
-                <li><strong>E-mail:</strong> [Seu e-mail de contato]</li>
-                <li><strong>GitHub:</strong> [Link do repositório, se aplicável]</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>14. Consentimento</h2>
-            <p>Ao instalar e usar a extensão SuperBusca - LinkedIn Job Automation, você concorda com esta Política de
-                Privacidade e com o processamento de seus dados conforme descrito aqui.</p>
-        </section>
-
-        <div class="summary-box">
-            <h3>Resumo em Linguagem Simples:</h3>
-            <ul>
-                <li>✅ Seus dados ficam no seu computador</li>
-                <li>✅ Você controla o que é salvo no Google Sheets</li>
-                <li>✅ Não vendemos ou compartilhamos seus dados</li>
-                <li>✅ Você pode deletar tudo a qualquer momento</li>
-                <li>✅ Não rastreamos você fora do LinkedIn</li>
-                <li>✅ Usamos apenas o necessário para a extensão funcionar</li>
-            </ul>
+            <footer>
+                <p>&copy; 2026 SuperBusca - LinkedIn Job Automation.</p>
+                <p class="footer-credits">Feito por <a href="https://www.linkedin.com/in/hradicchi/"
+                        target="_blank">Humberto Radicchi</a></p>
+            </footer>
         </div>
-
-        <footer>
-            <p>&copy; 2026 SuperBusca - LinkedIn Job Automation. Todos os direitos reservados.</p>
-        </footer>
     </div>
 </body>
 
