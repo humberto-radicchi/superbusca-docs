@@ -76,7 +76,10 @@
                         <li>Clique no botão verde <strong>Iniciar Busca</strong>.</li>
                         <li>Uma nova aba do LinkedIn será aberta. <strong>Não feche essa aba</strong> enquanto o robô
                             estiver trabalhando.</li>
-                        <li>Você pode acompanhar o progresso na barra de status da extensão.</li>
+                        <li><strong>📺 Status Overlay:</strong> Um painel flutuante aparecerá no canto inferior direito
+                            do LinkedIn mostrando o progresso, vagas coletadas e a última vaga encontrada em tempo real.
+                        </li>
+                        <li>Você também pode acompanhar o progresso na barra de status da extensão.</li>
                     </ol>
                 </div>
             </section>
@@ -105,7 +108,8 @@
                     <div class="example-box">Se você colocar <code>Senior</code>, vagas como "Desenvolvedor Júnior"
                         serão
                         ignoradas.</div>
-                    <div class="tip-box">Deixe em branco se quiser aceitar qualquer título da sua busca.</div>
+                    <div class="tip-box">As palavras são convertidas automaticamente para <strong>minúsculas</strong>
+                        para evitar duplicatas e erros de digitação.</div>
                 </div>
 
                 <div class="config-box">
@@ -158,7 +162,34 @@
                     <li><strong>Botão ✔ (Check):</strong> Marca a vaga como "Visto" (abre o link para você aplicar).
                     </li>
                     <li><strong>Botão ✖ (X):</strong> Arquiva a vaga (envia para a aba "Ignoradas" na planilha).</li>
+                    <li><strong>🔄 Recalcular Aderência:</strong> Localizado no topo da lista, este botão permite
+                        refazer
+                        o cálculo de score de todas as vagas locais caso você tenha atualizado seu perfil.</li>
                 </ul>
+            </section>
+
+            <hr class="divider">
+
+            <section>
+                <h2>🧠 Cálculo de Aderência (Score)</h2>
+                <p>O SuperBusca compara automaticamente as vagas encontradas com o seu perfil do LinkedIn.</p>
+                <div class="config-box">
+                    <h3>Como o Score é calculado?</h3>
+                    <p>Levamos em conta diversos fatores para gerar uma porcentagem de 0 a 100%:</p>
+                    <ul>
+                        <li><strong>Competências (40%):</strong> Match entre as skills requeridas e as do seu perfil.
+                        </li>
+                        <li><strong>Título do Cargo (15%):</strong> Similaridade entre seu cargo atual e o da vaga.</li>
+                        <li><strong>Experiência (15%):</strong> Comparação dos anos de experiência requeridos.</li>
+                        <li><strong>Senioridade (10%):</strong> Match de nível (Júnior, Pleno, Sênior).</li>
+                        <li><strong>Localização (10%):</strong> Verifica se a vaga é remota ou na sua cidade/país.</li>
+                        <li><strong>Formação e Certificações (10%):</strong> Requisitos educacionais e certificados.
+                        </li>
+                    </ul>
+                    <div class="tip-box">Para melhores resultados, certifique-se de que seu perfil na aba "Perfil"
+                        esteja
+                        completo e atualizado!</div>
+                </div>
             </section>
 
             <hr class="divider">
