@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperBusca - Guia de Instalação</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #fff;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #0a66c2;
+        }
+
+        .logo-section {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #0a66c2;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        h2 {
+            color: #0a66c2;
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e1e9ee;
+        }
+
+        h3 {
+            color: #004182;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .feature-box {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 100%);
+            border-left: 4px solid #0a66c2;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .feature-box h3 {
+            margin-top: 0;
+            color: #0a66c2;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .step-box {
+            background: #fff;
+            border: 2px solid #e1e9ee;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-number {
+            display: inline-block;
+            background: #0a66c2;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .step-title {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            color: #0a66c2;
+            margin-bottom: 10px;
+        }
+
+        ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .warning-box strong {
+            color: #856404;
+        }
+
+        .info-box {
+            background: #d1ecf1;
+            border-left: 4px solid #0dcaf0;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .info-box strong {
+            color: #055160;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e1e9ee;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: #0a66c2;
+            text-decoration: none;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .step-box {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-section">
+            <h1>🚀 SuperBusca</h1>
+            <p class="subtitle">Automação Inteligente para Busca de Vagas no LinkedIn</p>
+        </div>
+    </div>
+
+    <h2>📋 O que é o SuperBusca?</h2>
+    <p>
+        O <strong>SuperBusca</strong> é uma extensão para Google Chrome que automatiza a busca de vagas no LinkedIn,
+        economizando horas do seu tempo. A extensão coleta vagas automaticamente, filtra baseado em suas preferências,
+        calcula um score de aderência com seu perfil e organiza tudo em uma planilha do Google Sheets.
+    </p>
+
+    <div class="feature-box">
+        <h3>✨ Principais Funcionalidades</h3>
+        <ul class="feature-list">
+            <li><strong>Busca Automática:</strong> Configure uma vez e deixe o robô buscar vagas em intervalos regulares
+            </li>
+            <li><strong>Filtros Inteligentes:</strong> Filtre por palavras-chave, idioma e tipo de aplicação</li>
+            <li><strong>Score de Aderência:</strong> Cálculo automático de 0-100% baseado no match com seu perfil</li>
+            <li><strong>Status Overlay:</strong> Acompanhe o progresso em tempo real diretamente na página do LinkedIn
+            </li>
+            <li><strong>Organização Automática:</strong> Todas as vagas salvas no Google Sheets</li>
+            <li><strong>Backup na Nuvem:</strong> Suas configurações são salvas automaticamente</li>
+        </ul>
+    </div>
+
+    <h2>🔧 Instalação em Modo Desenvolvedor</h2>
+    <p>
+        Como a extensão ainda está em fase de testes, você precisará instalá-la manualmente no Chrome.
+        Siga os passos abaixo:
+    </p>
+
+    <div class="step-box">
+        <span class="step-number">1</span>
+        <span class="step-title">Obter os Arquivos da Extensão</span>
+        <p style="margin-top: 15px;">
+            Você receberá uma pasta compactada (ZIP) com todos os arquivos da extensão.
+            Extraia o conteúdo para uma pasta no seu computador (ex: <code>C:\SuperBusca</code>).
+        </p>
+        <div class="info-box">
+            <strong>💡 Dica:</strong> Escolha um local permanente para a pasta, pois a extensão precisa
+            desses arquivos para funcionar. Não delete a pasta depois de instalar!
+        </div>
+    </div>
+
+    <div class="step-box">
+        <span class="step-number">2</span>
+        <span class="step-title">Abrir o Chrome e Acessar Extensões</span>
+        <ol>
+            <li>Abra o Google Chrome</li>
+            <li>Digite na barra de endereços: <code>chrome://extensions</code></li>
+            <li>Pressione <strong>Enter</strong></li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <span class="step-number">3</span>
+        <span class="step-title">Ativar o Modo Desenvolvedor</span>
+        <ol>
+            <li>No canto superior direito da página, você verá um botão <strong>"Modo do desenvolvedor"</strong></li>
+            <li>Clique no botão para <strong>ativá-lo</strong> (ele ficará azul)</li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <span class="step-number">4</span>
+        <span class="step-title">Carregar a Extensão</span>
+        <ol>
+            <li>Clique no botão <strong>"Carregar sem compactação"</strong> que apareceu no topo</li>
+            <li>Navegue até a pasta onde você extraiu os arquivos da extensão</li>
+            <li>Selecione a pasta <strong>superbusca</strong> (a pasta que contém o arquivo <code>manifest.json</code>)
+            </li>
+            <li>Clique em <strong>"Selecionar pasta"</strong></li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <span class="step-number">5</span>
+        <span class="step-title">Verificar a Instalação</span>
+        <p style="margin-top: 15px;">
+            Se tudo deu certo, você verá o card do <strong>SuperBusca</strong> na lista de extensões instaladas.
+            O ícone da extensão também aparecerá na barra de ferramentas do Chrome.
+        </p>
+    </div>
+
+    <div class="warning-box">
+        <strong>⚠️ Importante:</strong> Não delete ou mova a pasta da extensão após a instalação.
+        Se você mover a pasta, precisará reinstalar a extensão seguindo os mesmos passos.
+    </div>
+
+    <h2>🚀 Primeiros Passos</h2>
+
+    <div class="step-box">
+        <span class="step-number">1</span>
+        <span class="step-title">Conectar ao Google Sheets</span>
+        <ol>
+            <li>Clique no ícone do SuperBusca na barra de ferramentas</li>
+            <li>Clique em <strong>"Conectar Google"</strong></li>
+            <li>Autorize o acesso à sua conta Google</li>
+            <li>Uma planilha será criada automaticamente no seu Google Drive</li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <span class="step-number">2</span>
+        <span class="step-title">Sincronizar seu Perfil</span>
+        <ol>
+            <li>Vá para a aba <strong>"Perfil"</strong> na extensão</li>
+            <li>Clique em <strong>"Sincronizar Perfil"</strong></li>
+            <li>Aguarde enquanto a extensão extrai suas informações do LinkedIn</li>
+            <li>Revise e ajuste as informações se necessário</li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <span class="step-number">3</span>
+        <span class="step-title">Configurar Filtros</span>
+        <ol>
+            <li>Vá para a aba <strong>"Configurações"</strong> (⚙️)</li>
+            <li>Cole as URLs das suas buscas do LinkedIn</li>
+            <li>Adicione palavras-chave que você quer encontrar nos títulos (não é obrigatório)</li>
+            <li>Adicione palavras restritas que você quer evitar (não é obrigatório)</li>
+            <li>Configure outros filtros conforme sua preferência</li>
+            <li>Clique em <strong>"💾 Salvar Configurações"</strong></li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <span class="step-number">4</span>
+        <span class="step-title">Iniciar a Busca</span>
+        <ol>
+            <li>Vá para a aba <strong>"Buscador"</strong></li>
+            <li>Clique no botão verde <strong>"Iniciar Busca"</strong></li>
+            <li>Uma nova aba do LinkedIn será aberta</li>
+            <li>Um painel flutuante aparecerá mostrando o progresso em tempo real</li>
+            <li>Aguarde enquanto o robô coleta as vagas</li>
+        </ol>
+        <div class="info-box">
+            <strong>💡 Dica:</strong> Você pode acompanhar o progresso tanto no painel flutuante quanto
+            na extensão. Não feche a aba do LinkedIn enquanto a busca estiver em andamento.
+        </div>
+    </div>
+
+    <h2>📊 Visualizando os Resultados</h2>
+    <p>
+        Após a busca, você pode:
+    </p>
+    <ul style="margin-left: 20px; margin-bottom: 20px;">
+        <li>Ver as vagas coletadas na aba <strong>"Vagas Coletadas"</strong> da extensão</li>
+        <li>Acessar a planilha do Google Sheets clicando em <strong>"📊 Abrir Planilha de Vagas"</strong></li>
+        <li>Filtrar e ordenar as vagas por tipo, aderência, etc.</li>
+        <li>Marcar vagas como vistas ou arquivá-las</li>
+    </ul>
+
+    <h2>❓ Precisa de Ajuda?</h2>
+    <div class="info-box">
+        <p>
+            Se você encontrar algum problema ou tiver dúvidas, entre em contato comigo.
+            Seu feedback é muito importante para melhorar a extensão!
+        </p>
+    </div>
+
+    <div class="contact-info">
+        <p><strong>Desenvolvido por:</strong> Humberto Radicchi</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hradicchi/">linkedin.com/in/hradicchi</a></p>
+        <p><strong>Documentação:</strong> <a href="https://superbusca.radicchi.com.br">superbusca.radicchi.com.br</a>
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 SuperBusca - LinkedIn Job Automation</p>
+        <p style="margin-top: 10px; font-size: 12px;">
+            Este é um projeto em desenvolvimento. Versão Beta para testes.
+        </p>
+    </div>
+</body>
+
+</html>
