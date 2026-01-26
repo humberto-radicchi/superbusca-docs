@@ -13,8 +13,10 @@ Documentação oficial da extensão **SuperBusca - LinkedIn Job Automation**
 
 SuperBusca é uma ferramenta de automação para busca de vagas no LinkedIn que:
 - 🤖 Automatiza a busca de vagas
-- 🎯 Filtra resultados por palavras-chave
-- 📊 Organiza vagas no Google Sheets
+- 🎯 Filtra resultados por palavras-chave e idioma
+- 📊 **Dashboard Completo** - Gerenciamento avançado de vagas e status
+- 🪄 **Assistente de Candidatura** - Detecção automática de candidaturas e serviços
+- 📈 Organiza vagas no Google Sheets com score de aderência
 - ⚡ Economiza tempo na procura por emprego
 
 ## 🔗 Links Úteis
