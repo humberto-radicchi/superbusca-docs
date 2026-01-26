@@ -41,18 +41,15 @@
                 <h2>🚀 Como Iniciar (Passo a Passo)</h2>
 
                 <div class="step-box">
-                    <h3>1. Conectando sua Conta</h3>
-                    <p>Ao abrir a extensão pela primeira vez, você verá um botão <strong>"Conectar Google"</strong> no
-                        topo.
-                    </p>
+                    <h3>1. Primeiro Acesso</h3>
+                    <p>Ao abrir a extensão pela primeira vez, o SuperBusca já está pronto para uso. Não é necessário
+                        criar contas ou configurar serviços externos.</p>
                     <ol>
-                        <li>Clique no botão.</li>
-                        <li>Autorize o acesso à sua conta Google (necessário para criar e salvar a planilha de vagas).
-                        </li>
-                        <li>Após conectar, uma planilha será criada automaticamente no seu Google Drive.</li>
-                        <li>Clique em <strong>"📊 Abrir Planilha de Vagas"</strong> no rodapé para ver onde seus dados
-                            serão
-                            salvos.</li>
+                        <li>Inicie o SuperBusca clicando no ícone da barra de ferramentas.</li>
+                        <li>Explore as abas para entender as funcionalidades.</li>
+                        <li>Seus dados serão salvos localmente no navegador (LocalStorage).</li>
+                        <li>Clique em <strong>"📊 Dashboard"</strong> no rodapé para ver o painel completo de
+                            gerenciamento.</li>
                     </ol>
                 </div>
 
@@ -64,8 +61,8 @@
                         <li>Preencha as <strong>URLs de Busca</strong> e <strong>Palavras-Chave</strong> (veja detalhes
                             abaixo).</li>
                         <li>Clique em <strong>"💾 Salvar Configurações"</strong>.</li>
-                        <li><strong>✨ Novidade:</strong> Suas configurações são automaticamente salvas na nuvem (Google
-                            Sheets) para backup!</li>
+                        <li><strong>✨ Importante:</strong> Suas configurações são salvas instantaneamente no seu
+                            navegador!</li>
                     </ol>
                 </div>
 
@@ -173,8 +170,8 @@
                         pesquise por empresa ou cargo.</li>
                     <li><strong>Visualização:</strong> Uma interface limpa e organizada para gerenciar centenas de vagas
                         de uma vez.</li>
-                    <li><strong>Sincronização:</strong> O dashboard reflete em tempo real os dados salvos na sua
-                        planilha do Google.</li>
+                    <li><strong>Sincronização:</strong> O dashboard reflete em tempo real os dados salvos localmente na
+                        extensão.</li>
                 </ul>
             </section>
 
@@ -186,12 +183,13 @@
                 <ul>
                     <li><strong>Detecção Automática:</strong> Quando você clica em botões de "Candidatar-se" no
                         LinkedIn, o SuperBusca detecta o evento.</li>
-                    <li><strong>Rastreio de Link:</strong> O link final da aplicação (externo) é capturado e enviado
-                        para sua planilha.</li>
+                    <li><strong>Rastreio de Link:</strong> O link final da aplicação (externo) é capturado e salvo na
+                        sua base local.</li>
                     <li><strong>Identificação de Serviço:</strong> O sistema identifica automaticamente se a vaga é da
                         Gupy, Greenhouse, Lever, Workday, entre outros.</li>
                     <li><strong>Atualização de Status:</strong> A vaga é marcada automaticamente como
-                        <strong>Aplicada</strong> no banco de dados.</li>
+                        <strong>Aplicada</strong> no Dashboard.
+                    </li>
                 </ul>
             </section>
 
@@ -203,7 +201,7 @@
                 <ul>
                     <li><strong>Botão ✔ (Check):</strong> Marca a vaga como "Visto" (abre o link para você aplicar).
                     </li>
-                    <li><strong>Botão ✖ (X):</strong> Arquiva a vaga (envia para a aba "Ignoradas" na planilha).</li>
+                    <li><strong>Botão ✖ (X):</strong> Arquiva a vaga (envia para a aba "Ignoradas" no Dashboard).</li>
                     <li><strong>🔄 Recalcular Aderência:</strong> Localizado no topo da lista, este botão permite
                         refazer
                         o cálculo de score de todas as vagas locais caso você tenha atualizado seu perfil.</li>
@@ -237,13 +235,12 @@
             <hr class="divider">
 
             <section>
-                <h2>☁️ Sincronização</h2>
-                <p>Na aba de configurações, existem botões de nuvem:</p>
+                <h2>🧹 Limpeza de Dados</h2>
+                <p>Na aba de configurações, você encontrará controles para gerenciar seu espaço:</p>
                 <ul>
-                    <li><strong>⬆️ Enviar:</strong> Salva suas configurações atuais na sua planilha do Google (aba
-                        "Config").</li>
-                    <li><strong>⬇️ Baixar:</strong> Carrega as configurações salvas na planilha para a extensão (útil se
-                        você usar em computadores diferentes).</li>
+                    <li><strong>Resetar Dados:</strong> Limpa todo o cache local de vagas e links processados.</li>
+                    <li><strong>Manutenção Automática:</strong> O SuperBusca remove automaticamente vagas antigas
+                        baseado no seu limite de dias configurado.</li>
                 </ul>
             </section>
 
