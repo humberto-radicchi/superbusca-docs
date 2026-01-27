@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="welcome.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -46,10 +47,9 @@
                         criar contas ou configurar serviços externos.</p>
                     <ol>
                         <li>Inicie o SuperBusca clicando no ícone da barra de ferramentas.</li>
-                        <li>Explore as abas para entender as funcionalidades.</li>
-                        <li>Seus dados serão salvos localmente no navegador (LocalStorage).</li>
-                        <li>Clique em <strong>"📊 Dashboard"</strong> no rodapé para ver o painel completo de
-                            gerenciamento.</li>
+                        <li>O <strong>SuperBusca Inteligente</strong> será aberto automaticamente em uma nova aba.</li>
+                        <li>Explore as abas laterais para entender as funcionalidades.</li>
+                        <li>Seus dados são salvos localmente e com total privacidade.</li>
                     </ol>
                 </div>
 
@@ -168,10 +168,29 @@
                     <li><strong>Acesso:</strong> Clique no botão "📊 Dashboard" no rodapé da extensão.</li>
                     <li><strong>Filtros Avançados:</strong> Filtre por status (Novas, Vistas, Aplicadas, Ignoradas) e
                         pesquise por empresa ou cargo.</li>
-                    <li><strong>Visualização:</strong> Uma interface limpa e organizada para gerenciar centenas de vagas
-                        de uma vez.</li>
+                    <li><strong>Visualização:</strong> Uma interface limpa e compacta, com destaque para <strong>Vagas
+                            Novas</strong> no topo.</li>
                     <li><strong>Sincronização:</strong> O dashboard reflete em tempo real os dados salvos localmente na
                         extensão.</li>
+                </ul>
+            </section>
+
+            <hr class="divider">
+
+            <section>
+                <h2>👥 Aba Pessoas (Contatos de Vagas)</h2>
+                <p>O SuperBusca agora permite localizar recrutadores e gestores das empresas das vagas que você coletou.
+                </p>
+                <ul>
+                    <li><strong>Como Funciona:</strong> O robô busca no LinkedIn por pessoas que trabalham na área de
+                        Talent Acquisition, RH ou Gestão de Vagas nas empresas listadas.</li>
+                    <li><strong>Organização:</strong> Os resultados são agrupados por empresa em um formato de acordeão
+                        (accordion).</li>
+                    <li><strong>Filtros:</strong> Utilize a opção <strong>"Apenas Já Aplicadas"</strong> para buscar
+                        contatos apenas de vagas que você já se candidatou. Se desmarcado, a busca foca em vagas novas.
+                    </li>
+                    <li><strong>Ação Direta:</strong> Clique no link do perfil para abrir o perfil do contato no
+                        LinkedIn e iniciar sua abordagem.</li>
                 </ul>
             </section>
 
@@ -190,6 +209,21 @@
                     <li><strong>Atualização de Status:</strong> A vaga é marcada automaticamente como
                         <strong>Aplicada</strong> no Dashboard.
                     </li>
+                </ul>
+            </section>
+
+            <hr class="divider">
+
+            <section>
+                <h2>🛡️ Estabilidade e Segurança</h2>
+                <p>Otimizamos o robô para garantir uma navegação fluida e segura:</p>
+                <ul>
+                    <li><strong>Validação de URL:</strong> O sistema bloqueia automaticamente "URLs recursivas" (links
+                        dentro de links) para evitar loops.</li>
+                    <li><strong>Recuperação de Erros:</strong> Se a busca travar ou encontrar uma página vazia, o
+                        SuperBusca reinicia o processo automaticamente ou pausa para evitar bloqueios.</li>
+                    <li><strong>Sanitização:</strong> Todos os links são limpos antes de serem processados para garantir
+                        a consistência dos dados.</li>
                 </ul>
             </section>
 
