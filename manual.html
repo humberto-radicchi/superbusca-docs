@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Manual Básico da extensão SuperBusca - LinkedIn Job Automation">
-    <title>Manual Básico - SuperBusca</title>
+    <meta name="description" content="Manual do Usuário SuperBusca - Gestão de Vagas">
+    <title>Manual do Usuário - SuperBusca</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -32,257 +32,249 @@
         <!-- Content -->
         <div class="content-page">
             <header>
-                <h1>📘 Manual Básico do SuperBusca</h1>
-                <p class="subtitle">Bem-vindo ao SuperBusca! Este guia rápido vai te ajudar a configurar e começar a
-                    usar
-                    sua extensão de automação para LinkedIn.</p>
+                <h1>📘 Manual do Usuário</h1>
+                <p class="subtitle">Guia completo da interface de gestão do SuperBusca.</p>
             </header>
 
-            <section>
-                <h2>🚀 Como Iniciar (Passo a Passo)</h2>
+            <div class="manual-layout">
+                <!-- Sidebar Navigation -->
+                <aside class="manual-sidebar">
+                    <div class="sidebar-title">Navegação</div>
+                    <nav class="sidebar-nav">
+                        <a href="#intro" class="sidebar-link">Visão Geral</a>
+                        <a href="#tab-vagas" class="sidebar-link">1. Aba Vagas</a>
+                        <a href="#tab-buscador" class="sidebar-link">2. Aba Buscador</a>
+                        <a href="#tab-perfil" class="sidebar-link">3. Aba Perfil</a>
+                        <a href="#tab-pessoas" class="sidebar-link">4. Aba Pessoas</a>
+                        <a href="#tab-config" class="sidebar-link">5. Configurações</a>
+                        <a href="#extras" class="sidebar-link">Recursos Extras</a>
+                    </nav>
+                </aside>
 
-                <div class="step-box">
-                    <h3>1. Primeiro Acesso</h3>
-                    <p>Ao abrir a extensão pela primeira vez, o SuperBusca já está pronto para uso. Não é necessário
-                        criar contas ou configurar serviços externos.</p>
-                    <ol>
-                        <li>Inicie o SuperBusca clicando no ícone da barra de ferramentas.</li>
-                        <li>O <strong>SuperBusca Inteligente</strong> será aberto automaticamente em uma nova aba.</li>
-                        <li>Explore as abas laterais para entender as funcionalidades.</li>
-                        <li>Seus dados são salvos localmente e com total privacidade.</li>
-                    </ol>
-                </div>
+                <!-- Check Main Content -->
+                <main class="manual-content">
 
-                <div class="step-box">
-                    <h3>2. Configurando o Buscador</h3>
-                    <p>Antes de iniciar, você precisa dizer ao SuperBusca o que procurar.</p>
-                    <ol>
-                        <li>Clique no ícone de engrenagem ⚙️ (aba Configurações).</li>
-                        <li>Preencha as <strong>URLs de Busca</strong> e <strong>Palavras-Chave</strong> (veja detalhes
-                            abaixo).</li>
-                        <li>Clique em <strong>"💾 Salvar Configurações"</strong>.</li>
-                        <li><strong>✨ Importante:</strong> Suas configurações são salvas instantaneamente no seu
-                            navegador!</li>
-                    </ol>
-                </div>
+                    <!-- 0. INTRO -->
+                    <section id="intro" class="manual-section">
+                        <h2>🚀 Visão Geral</h2>
+                        <div class="step-box">
+                            <h3>Acesso ao Dashboard</h3>
+                            <p>O <strong>SuperBusca</strong> opera inteiramente em uma interface de dashboard dedicada
+                                para melhor visualização e gestão.</p>
+                            <ol>
+                                <li>Clique no ícone da extensão no seu navegador.</li>
+                                <li>O Dashboard será aberto automaticamente em uma nova aba.</li>
+                                <li>Navegue pelas abas superiores para acessar as diferentes ferramentas.</li>
+                            </ol>
+                        </div>
+                    </section>
 
-                <div class="step-box">
-                    <h3>3. Iniciando a Busca</h3>
-                    <ol>
-                        <li>Vá para a aba <strong>"Buscador"</strong> (a do meio).</li>
-                        <li>Clique no botão verde <strong>Iniciar Busca</strong>.</li>
-                        <li>Uma nova aba do LinkedIn será aberta. <strong>Não feche essa aba</strong> enquanto o robô
-                            estiver trabalhando.</li>
-                        <li><strong>📺 Status Overlay:</strong> Um painel flutuante aparecerá no canto inferior direito
-                            do LinkedIn mostrando o progresso, vagas coletadas e a última vaga encontrada em tempo real.
-                        </li>
-                        <li>Você também pode acompanhar o progresso na barra de status da extensão.</li>
-                    </ol>
-                </div>
-            </section>
+                    <hr class="divider">
 
-            <hr class="divider">
+                    <!-- 1. VAGAS (JOBS) -->
+                    <section id="tab-vagas" class="manual-section">
+                        <h2>💼 Aba 1: Vagas (Gestão)</h2>
+                        <p>Central de gerenciamento das oportunidades encontradas. Aqui você organiza seu funil de
+                            vagas.</p>
 
-            <section>
-                <h2>⚙️ Entendendo as Configurações</h2>
-                <p>Aqui explicamos para que serve cada campo na aba de configurações (⚙️):</p>
+                        <div class="info-box">
+                            <h3>Sub-abas</h3>
+                            <ul>
+                                <li><strong>✨ Coletadas:</strong> Vagas ativas que aguardam sua análise ou aplicação.
+                                </li>
+                                <li><strong>🚫 Ignoradas:</strong> Vagas que você descartou ou que foram filtradas
+                                    automaticamente pelo robô.</li>
+                            </ul>
+                        </div>
 
-                <div class="config-box">
-                    <h3>🔗 URLs de Busca</h3>
-                    <p>Cole aqui os links das buscas de emprego do LinkedIn que você quer monitorar.</p>
-                    <p><strong>Como pegar o link:</strong></p>
-                    <ol>
-                        <li>Vá no LinkedIn e faça uma pesquisa de vagas (ex: "Desenvolvedor Java Remoto").</li>
-                        <li>Aplique os filtros desejados (Data do anúncio, Localização, etc).</li>
-                        <li>Copie a URL do navegador e cole neste campo.</li>
-                    </ol>
-                    <div class="tip-box">Você pode colocar vários links, um por linha.</div>
-                </div>
+                        <h3>Filtros Avançados</h3>
+                        <p>Utilize a barra superior para refinar sua lista:</p>
+                        <ul>
+                            <li><strong>Busca de Texto:</strong> Encontre vagas por termos no título, empresa ou
+                                tecnologias.</li>
+                            <li><strong>Filtros de Select:</strong>
+                                <ul>
+                                    <li>Empresa</li>
+                                    <li>Aderência (Score)</li>
+                                    <li>Tipo (Interna/Externa)</li>
+                                    <li>Status (Novas/Aplicadas)</li>
+                                </ul>
+                            </li>
+                        </ul>
 
-                <div class="config-box">
-                    <h3>🎯 Palavras-Chave no Título</h3>
-                    <p>Lista de palavras que <strong>DEVEM</strong> aparecer no título da vaga.</p>
-                    <div class="example-box">Se você colocar <code>Senior</code>, vagas como "Desenvolvedor Júnior"
-                        serão
-                        ignoradas.</div>
-                    <div class="tip-box">As palavras são convertidas automaticamente para <strong>minúsculas</strong>
-                        para evitar duplicatas e erros de digitação.</div>
-                </div>
+                        <h3>Ações</h3>
+                        <ul>
+                            <li><strong>Botão ✔ (Check):</strong> Marca como "Visto" e abre o link da vaga para
+                                aplicação.</li>
+                            <li><strong>Botão ✖ (X):</strong> Envia a vaga para a lista de "Ignoradas".</li>
+                            <li><strong>Botão ♻️ (Reciclar):</strong> Reprocessa os filtros e atualiza a lista.</li>
+                        </ul>
 
-                <div class="config-box">
-                    <h3>🚫 Palavras Restritas no Título</h3>
-                    <p>Lista de palavras que <strong>NÃO PODEM</strong> aparecer no título.</p>
-                    <div class="example-box">
-                        <code>Estágio</code>, <code>Vendedor</code>, <code>Presencial</code>.
-                    </div>
-                    <p>O robô ignorará automaticamente qualquer vaga que contenha essas palavras.</p>
-                </div>
+                        <h3>Score de Aderência</h3>
+                        <p>O sistema calcula uma porcentagem de compatibilidade (0-100%) comparando:</p>
+                        <ul>
+                            <li>Suas Competências (do perfil sincronizado) vs Competências da Vaga.</li>
+                            <li>Seu Título Profissional vs Título da Vaga.</li>
+                            <li>Seus Anos de Experiência vs Requisitos da Vaga.</li>
+                        </ul>
+                    </section>
 
-                <div class="config-box">
-                    <h3>🇧🇷 Apenas vagas em Português BR</h3>
-                    <p>Se marcado, o robô abrirá a vaga e verificará se a descrição está em português. Se não estiver, a
-                        vaga
-                        será
-                        ignorada.</p>
-                    <div class="tip-box">Útil se você busca apenas vagas brasileiras em português.</div>
-                </div>
+                    <hr class="divider">
 
-                <div class="config-box">
-                    <h3>📄 Limite de Páginas</h3>
-                    <p>Define quantas páginas de resultados do LinkedIn o robô deve percorrer por cada URL de busca.</p>
-                    <div class="tip-box">Padrão: 10 páginas. Aumente se quiser uma busca mais profunda.</div>
-                </div>
+                    <!-- 2. BUSCADOR (SCRAPER) -->
+                    <section id="tab-buscador" class="manual-section">
+                        <h2>🔍 Aba 2: Buscador (Automação)</h2>
+                        <p>O centro de comando do robô. Aqui você inicia e monitora a coleta de vagas.</p>
 
-                <div class="config-box">
-                    <h3>📅 Manter vagas por (dias)</h3>
-                    <p>Define por quanto tempo as vagas salvas (cache) são lembradas para evitar duplicatas.</p>
-                    <div class="tip-box">Padrão: 30 dias.</div>
-                </div>
+                        <div class="step-box">
+                            <h3>Como Iniciar a Coleta</h3>
+                            <ol>
+                                <li>Certifique-se de ter configurado suas URLs na aba <strong>Configurações</strong>.
+                                </li>
+                                <li>Clique no botão <strong>🚀 Iniciar Coleta Automática</strong>.</li>
+                                <li>O SuperBusca abrirá o LinkedIn em uma nova aba e começará a navegar.</li>
+                                <li>Acompanhe o progresso pelo painel de status nesta tela ou pelo overlay no LinkedIn.
+                                </li>
+                            </ol>
+                        </div>
 
-                <div class="config-box">
-                    <h3>⏰ Busca Automática (Na aba Buscador)</h3>
-                    <p>Ao lado do botão de iniciar, você encontra a option "Busca Automática".</p>
-                    <ul>
-                        <li><strong>Input numérico:</strong> Define o intervalo em minutos (ex: 30, 60).</li>
-                        <li><strong>Chave (Switch):</strong> Ativa a busca recorrente. O robô acordará sozinho no
-                            intervalo
-                            definido para buscar novas vagas.</li>
-                    </ul>
-                </div>
+                        <div class="config-box">
+                            <h3>⏰ Busca Programada</h3>
+                            <p>Automatize sua rotina de busca:</p>
+                            <ul>
+                                <li>Defina o <strong>Intervalo</strong> (em minutos).</li>
+                                <li>Ative a chave <strong>Busca Automática</strong>.</li>
+                                <li>O sistema iniciará a coleta automaticamente no tempo definido, desde que a aba do
+                                    Dashboard esteja aberta.</li>
+                            </ul>
+                        </div>
+                    </section>
 
-                <div class="config-box">
-                    <h3>🧹 Resetar Dados</h3>
-                    <p>Localizado na aba de Configurações, este botão permite limpar todo o cache local de vagas e links
-                        processados.</p>
-                    <div class="warning-box"><strong>Atenção:</strong> Isso fará com que o robô processe novamente vagas
-                        que já foram vistas ou ignoradas anteriormente.</div>
-                </div>
-            </section>
+                    <hr class="divider">
 
-            <hr class="divider">
+                    <!-- 3. PERFIL (PROFILE) -->
+                    <section id="tab-perfil" class="manual-section">
+                        <h2>👤 Aba 3: Perfil (Sincronização)</h2>
+                        <p>Sincronize seus dados do LinkedIn para alimentar o algoritmo de cálculo de aderência (Score).
+                        </p>
 
-            <section>
-                <h2>📊 Dashboard (Painel de Controle)</h2>
-                <p>O SuperBusca agora inclui um Dashboard completo que abre em uma nova aba do navegador.</p>
-                <ul>
-                    <li><strong>Acesso:</strong> Clique no botão "📊 Dashboard" no rodapé da extensão.</li>
-                    <li><strong>Filtros Avançados:</strong> Filtre por status (Novas, Vistas, Aplicadas, Ignoradas) e
-                        pesquise por empresa ou cargo.</li>
-                    <li><strong>Visualização:</strong> Uma interface limpa e compacta, com destaque para <strong>Vagas
-                            Novas</strong> no topo.</li>
-                    <li><strong>Sincronização:</strong> O dashboard reflete em tempo real os dados salvos localmente na
-                        extensão.</li>
-                </ul>
-            </section>
+                        <div class="step-box">
+                            <h3>Como Sincronizar</h3>
+                            <ol>
+                                <li>Cole a URL do seu perfil público do LinkedIn no campo indicado.</li>
+                                <li>Clique em <strong>Sincronizar</strong>.</li>
+                                <li>O sistema extrairá suas skills, experiências e formações.</li>
+                            </ol>
+                        </div>
 
-            <hr class="divider">
+                        <h3>Visualização de Dados</h3>
+                        <p>Após a sincronização, você verá seus dados organizados em seções (Título, Sobre,
+                            Competências, etc). Isso confirma que o SuperBusca "conhece" seu perfil para comparar com as
+                            vagas.</p>
+                        <div class="tip-box">
+                            <strong>💡 Sugestões de Palavras-Chave:</strong> O sistema analisa seu perfil e sugere
+                            termos que você pode adicionar às suas configurações de busca.
+                        </div>
+                    </section>
 
-            <section>
-                <h2>👥 Aba Pessoas (Contatos de Vagas)</h2>
-                <p>O SuperBusca agora permite localizar recrutadores e gestores das empresas das vagas que você coletou.
-                </p>
-                <ul>
-                    <li><strong>Como Funciona:</strong> O robô busca no LinkedIn por pessoas que trabalham na área de
-                        Talent Acquisition, RH ou Gestão de Vagas nas empresas listadas.</li>
-                    <li><strong>Organização:</strong> Os resultados são agrupados por empresa em um formato de acordeão
-                        (accordion).</li>
-                    <li><strong>Filtros:</strong> Utilize a opção <strong>"Apenas Já Aplicadas"</strong> para buscar
-                        contatos apenas de vagas que você já se candidatou. Se desmarcado, a busca foca em vagas novas.
-                    </li>
-                    <li><strong>Ação Direta:</strong> Clique no link do perfil para abrir o perfil do contato no
-                        LinkedIn e iniciar sua abordagem.</li>
-                </ul>
-            </section>
+                    <hr class="divider">
 
-            <hr class="divider">
+                    <!-- 4. PESSOAS (PEOPLE) -->
+                    <section id="tab-pessoas" class="manual-section">
+                        <h2>👥 Aba 4: Pessoas (Networking)</h2>
+                        <p>Encontre recrutadores e gestores das empresas onde você encontrou vagas.</p>
 
-            <section>
-                <h2>🪄 Assistente de Candidatura</h2>
-                <p>O robô agora monitora suas ações para facilitar o rastreio de candidaturas.</p>
-                <ul>
-                    <li><strong>Detecção Automática:</strong> Quando você clica em botões de "Candidatar-se" no
-                        LinkedIn, o SuperBusca detecta o evento.</li>
-                    <li><strong>Rastreio de Link:</strong> O link final da aplicação (externo) é capturado e salvo na
-                        sua base local.</li>
-                    <li><strong>Identificação de Serviço:</strong> O sistema identifica automaticamente se a vaga é da
-                        Gupy, Greenhouse, Lever, Workday, entre outros.</li>
-                    <li><strong>Atualização de Status:</strong> A vaga é marcada automaticamente como
-                        <strong>Aplicada</strong> no Dashboard.
-                    </li>
-                </ul>
-            </section>
+                        <div class="info-box">
+                            <h3>Filtro "Apenas Já Aplicadas"</h3>
+                            <ul>
+                                <li><strong>Ativado (ON):</strong> Busca contatos apenas de empresas onde você já marcou
+                                    a vaga como "Aplicada" (Status 1). Útil para follow-up.</li>
+                                <li><strong>Desativado (OFF):</strong> Busca contatos de empresas das vagas novas. Útil
+                                    para abordagem prévia.</li>
+                            </ul>
+                        </div>
 
-            <hr class="divider">
+                        <h3>Iniciando a Busca de Contatos</h3>
+                        <ol>
+                            <li>Configure o <strong>Limite de Páginas</strong> (quantas páginas de pessoas varrer por
+                                empresa).</li>
+                            <li>Clique em <strong>🔍 Buscar Contatos de Vagas</strong>.</li>
+                            <li>Os resultados aparecerão agrupados por empresa.</li>
+                        </ol>
+                    </section>
 
-            <section>
-                <h2>🛡️ Estabilidade e Segurança</h2>
-                <p>Otimizamos o robô para garantir uma navegação fluida e segura:</p>
-                <ul>
-                    <li><strong>Validação de URL:</strong> O sistema bloqueia automaticamente "URLs recursivas" (links
-                        dentro de links) para evitar loops.</li>
-                    <li><strong>Recuperação de Erros:</strong> Se a busca travar ou encontrar uma página vazia, o
-                        SuperBusca reinicia o processo automaticamente ou pausa para evitar bloqueios.</li>
-                    <li><strong>Sanitização:</strong> Todos os links são limpos antes de serem processados para garantir
-                        a consistência dos dados.</li>
-                </ul>
-            </section>
+                    <hr class="divider">
 
-            <hr class="divider">
+                    <!-- 5. CONFIGURAÇÕES (SETTINGS) -->
+                    <section id="tab-config" class="manual-section">
+                        <h2>⚙️ Aba 5: Configurações</h2>
+                        <p>Personalize o comportamento do SuperBusca. Todas as alterações são salvas automaticamente ao
+                            clicar em "Salvar Configuração".</p>
 
-            <section>
-                <h2>📊 Gerenciando Vagas (Aba Vagas Coletadas)</h2>
-                <p>Na primeira aba da extensão, você vê as vagas que foram encontradas e validadas.</p>
-                <ul>
-                    <li><strong>Botão ✔ (Check):</strong> Marca a vaga como "Visto" (abre o link para você aplicar).
-                    </li>
-                    <li><strong>Botão ✖ (X):</strong> Arquiva a vaga (envia para a aba "Ignoradas" no Dashboard).</li>
-                    <li><strong>🔄 Recalcular Aderência:</strong> Localizado no topo da lista, este botão permite
-                        refazer
-                        o cálculo de score de todas as vagas locais caso você tenha atualizado seu perfil.</li>
-                </ul>
-            </section>
+                        <div class="config-box">
+                            <h3>🔍 URLs de Busca</h3>
+                            <p>Lista de links de pesquisa do LinkedIn que o robô deve visitar.</p>
+                            <p><strong>Como adicionar:</strong> Faça uma busca no LinkedIn com todos os seus filtros
+                                (local, data, etc), copie a URL do navegador e cole aqui.</p>
+                        </div>
 
-            <hr class="divider">
+                        <div class="config-box">
+                            <h3>✅ Palavras-Chave no Título</h3>
+                            <p>Termos obrigatórios. O robô só coletará vagas que contenham pelo menos uma dessas
+                                palavras no título.</p>
+                            <div class="example-box">Ex: <code>Desenvolvedor</code>, <code>Frontend</code>,
+                                <code>Java</code>.
+                            </div>
+                        </div>
 
-            <section>
-                <h2>🧠 Cálculo de Aderência (Score)</h2>
-                <p>O SuperBusca compara automaticamente as vagas encontradas com o seu perfil do LinkedIn.</p>
-                <div class="config-box">
-                    <h3>Como o Score é calculado?</h3>
-                    <p>Levamos em conta diversos fatores para gerar uma porcentagem de 0 a 100%:</p>
-                    <ul>
-                        <li><strong>Competências (40%):</strong> Match entre as skills requeridas e as do seu perfil.
-                        </li>
-                        <li><strong>Título do Cargo (15%):</strong> Similaridade entre seu cargo atual e o da vaga.</li>
-                        <li><strong>Experiência (15%):</strong> Comparação dos anos de experiência requeridos.</li>
-                        <li><strong>Senioridade (10%):</strong> Match de nível (Júnior, Pleno, Sênior).</li>
-                        <li><strong>Localização (10%):</strong> Verifica se a vaga é remota ou na sua cidade/país.</li>
-                        <li><strong>Formação e Certificações (10%):</strong> Requisitos educacionais e certificados.
-                        </li>
-                    </ul>
-                    <div class="tip-box">Para melhores resultados, certifique-se de que seu perfil na aba "Perfil"
-                        esteja
-                        completo e atualizado!</div>
-                </div>
-            </section>
+                        <div class="config-box">
+                            <h3>🚫 Palavras Restritas</h3>
+                            <p>Termos proibidos. Se o título contiver qualquer uma dessas palavras, a vaga será ignorada
+                                imediatamente.</p>
+                            <div class="example-box">Ex: <code>Sênior</code> (se você for Jr), <code>Presencial</code>
+                                (se busca remoto).</div>
+                        </div>
 
-            <hr class="divider">
+                        <div class="config-box">
+                            <h3>🛠️ Automação e Backup</h3>
+                            <ul>
+                                <li><strong>Somente vagas em Português:</strong> Analisa a descrição da vaga e ignora se
+                                    não for PT-BR.</li>
+                                <li><strong>Limite de Páginas:</strong> Profundidade da busca no LinkedIn (padrão 10).
+                                </li>
+                                <li><strong>Backup:</strong> Botões de Exportar e Importar permitem salvar suas
+                                    configurações e dados em um arquivo JSON.</li>
+                            </ul>
+                        </div>
+                    </section>
 
-            <section>
-                <h2>🧹 Limpeza de Dados</h2>
-                <p>Na aba de configurações, você encontrará controles para gerenciar seu espaço:</p>
-                <ul>
-                    <li><strong>Resetar Dados:</strong> Limpa todo o cache local de vagas e links processados.</li>
-                    <li><strong>Manutenção Automática:</strong> O SuperBusca remove automaticamente vagas antigas
-                        baseado no seu limite de dias configurado.</li>
-                </ul>
-            </section>
+                    <hr class="divider">
+
+                    <!-- EXTRAS -->
+                    <section id="extras" class="manual-section">
+                        <h2>✨ Recursos Extras</h2>
+
+                        <h3>Assistente de Candidatura <span class="badge-dev">Em Desenvolvimento</span></h3>
+                        <p>Currently, this feature is being refined to ensure maximum compatibility.</p>
+                        <p>O SuperBusca monitora seus cliques em botões "Candidatar-se" no LinkedIn. Quando detectado,
+                            ele:</p>
+                        <ul>
+                            <li>Altera o status da vaga para <strong>Aplicada</strong> automaticamente.</li>
+                            <li>Salva o link externo da aplicação (Gupy, Greenhouse, etc).</li>
+                        </ul>
+
+                    </section>
+
+                </main>
+            </div>
 
             <footer>
-                <p>&copy; 2026 SuperBusca - LinkedIn Job Automation.</p>
-                <p class="footer-credits">Feito por <a href="https://www.linkedin.com/in/hradicchi/"
-                        target="_blank">Humberto Radicchi</a></p>
-                <p><a href="https://superbusca.radicchi.com.br" target="_blank">superbusca.radicchi.com.br</a></p>
+                <p>&copy; 2026 SuperBusca - Gestão Inteligente de Vagas.</p>
+                <div class="footer-links">
+                    <a href="./privacy.html">Política de Privacidade</a>
+                    <span>•</span>
+                    <a href="./terms.html">Termos de Serviço</a>
+                </div>
             </footer>
         </div>
     </div>
